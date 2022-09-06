@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: using
+# key: using
+# --
+@using ($1){
+  $0
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: methodfunction
+# key: mf
+# --
+.$1(function($2){
+  $0
+});

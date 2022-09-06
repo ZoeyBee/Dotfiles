@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ans
+# key: ans
+# --
+\underline{\underline{$0}}

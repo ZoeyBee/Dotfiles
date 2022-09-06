@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: tiaxis
+# key: tiaxis
+# --
+$$\begin{tikzpicture}[scale=0.2]
+\draw [->] (0,-10) -- (0,10);
+\draw [->] (-10,0) -- (10,0);
+\end{tikzpicture}$$

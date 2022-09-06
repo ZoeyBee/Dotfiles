@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: document ready
+# key: dr
+# --
+$(document).ready(function() {
+  $0
+});

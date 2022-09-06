@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: react-state
+# key: rst
+# --
+this.state = {
+  $0
+};

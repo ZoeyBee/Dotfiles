@@ -1,0 +1,32 @@
+[options]
+    mouse_autohide = true
+    cursor_blink   = system
+    urgent_on_bell = false
+    audible_bell   = false
+    visible_bell   = false
+    font           = Roboto Mono Medium 15
+    browser        = qutebrowser
+
+[colors]
+    foreground     = rgba(150, 157, 169, 1)
+    background     = rgba(39, 43, 51, 0.7)
+    cursor         = #969da9
+    highlight      = #272b33
+    color0         = #61afef //blue
+    color1         = #e06c75 //red
+    color2         = #e5c07b
+    color3         = #e5c07b
+    color4         = #1c3c40
+    color5         = #c678dd
+    color6         = #98c379
+    color7         = #eee8d5
+    color8         = #002b36
+    color9         = #d19a66
+    color10        = #586e75 / winner
+    color11        = #657b83
+    color12        = #839496
+    color13        = #6c71c4
+    color14        = #93a1a1
+    color15        = #fdf6e3
+    color235       = rgba(39, 43, 51, 0.7)
+    color234       = rgba(39, 43, 51, 0.7)

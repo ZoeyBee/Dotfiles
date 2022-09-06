@@ -1,0 +1,121 @@
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+[bar/topbar]
+monitor = HDMI-1
+width = 100%
+height = 25
+bottom = true
+modules-left =
+modules-center = i3
+modules-right = date
+font-0 = FontAwesome:pixelsize=16;1
+font-1 = Roboto Mono:pixelsize=13;syle=bold;1
+font-2 = "coins:style=Regular;1"
+font-3 = siji:pixelsize=10;1
+background = #00000000
+foreground = #B1c87fa1
+
+[bar/traybar]
+width = 100%
+height = 25
+bottom = true
+
+background = #00000000
+foreground = #B1c87fa1
+
+modules-left = battery volume
+modules-center = i3
+modules-right = date
+# modules-right = crypto label date
+
+font-0 = FontAwesome:pixelsize=16;1
+font-1 = Roboto Mono:pixelsize=13;syle=bold;1
+font-2 = "coins:style=Regular;1"
+font-3 = siji:pixelsize=10;1
+
+[module/battery]
+type = internal/battery
+
+# #  time-format = %H:%M
+# #  format-charging = "%time"
+# #  format-discharging = "%H:%M"
+# label-full = "Full"
+
+# full-at = 99
+
+# battery = BAT0
+# adapter = ADP1
+
+# poll-interval = 5
+
+[module/date]
+type = internal/date
+interval = 5
+
+date = "%d/%m/%y"
+date-alt = " %d"
+
+time = " %H:%M "
+time-alt =  %H:%M
+
+label = %date% %time%
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = true
+strip-wsnumbers = true
+pin-workspaces = true
+
+label-mode-padding = 5
+
+label-unfocused-foreground = #51a0456f
+label-unfocused-padding = 1
+label-visible-foregroud = #91896cad
+label-visible-padding = 1
+label-focused-foreground = #91896cad
+label-focused-padding = 1
+label-urgent-padding = 1
+
+[module/volume]
+type = internal/alsa
+
+format-volume = <bar-volume>
+label-volume = " "
+label-volume-foreground = #87ac70
+label-muted = "             "
+
+bar-volume-width = 10
+bar-volume-gradient = true
+bar-volume-indicator = " "
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = " "
+bar-volume-empty-font = 2
+
+[module/crypto]
+type = custom/script
+exec = ~/.config/polybar/pcrypto.py --base USD --coins btc eth xmr ltc
+interval = 600
+
+[module/label]
+type = custom/text
+content = "                                "
+
+# [module/vpn]
+# type = custom/script
+
+# [module/network]
+# type = internal/network
+# interface = enp0s26u1u4u2
+
+# format-connected = <label-connected>
+# format-disconnected = <label-disconnected>
+# format-packetloss = <animation-packetloss> <label-connected>
+
+# label-connected = "%downspeed:9%  "
+# label-disconnected = " "

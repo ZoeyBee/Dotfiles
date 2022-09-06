@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: selectorf
+# key: sf
+# --
+$("$1").$2(function($3) {
+  $0
+});

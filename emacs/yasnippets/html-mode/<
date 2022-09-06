@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: smalltag
+# key: <
+# --
+<$1 $0 />

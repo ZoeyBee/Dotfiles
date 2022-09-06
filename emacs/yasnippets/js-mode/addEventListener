@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: addEventListener
+# key: ael
+# --
+window.addEventListener("$1", function(){
+  $0
+}, false);

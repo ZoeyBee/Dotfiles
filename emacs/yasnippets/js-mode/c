@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name:c
+# key: c
+# --
+class $1 {
+    ${2:constructor}($3){
+        $0
+    }
+}

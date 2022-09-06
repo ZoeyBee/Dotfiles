@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pag
+# key: pag
+# --
+import pyautogui as pag

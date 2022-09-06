@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: each
+# key: e
+# --
+$.each(
+  $1,
+  function(${2:Key, Value}){
+    $0
+  }
+);

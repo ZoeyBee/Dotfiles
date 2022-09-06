@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: $a
+# key: $a
+# --
+$$\begin{aligned}
+$0
+\end{aligned}$$

@@ -1,0 +1,14 @@
+test.*
+gtd
+bg/*
+*.rej
+__pycache__
+anim* 
+tmp* 
+#*
+*#
+*.pyc
+.flycheck*
+*recentf*
+*ac-comphist*
+scripts/local_commands*

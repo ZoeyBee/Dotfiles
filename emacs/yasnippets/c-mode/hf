@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name:hf
+# key:hf
+# --
+${1:void}
+$2 ($3);

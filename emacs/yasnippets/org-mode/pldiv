@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pldiv
+# key: pldiv
+# --
+\polylongdiv{$1}{$2}$0

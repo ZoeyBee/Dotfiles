@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: method
+# key: mtd
+# --
+$1() {
+  $0
+}

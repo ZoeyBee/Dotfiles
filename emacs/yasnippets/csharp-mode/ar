@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: actionresult
+# key: ar
+# --
+public ActionResult $1($2)
+{
+    $3
+    return View($0);
+}

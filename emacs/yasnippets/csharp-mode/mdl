@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: model
+# key: mdl
+# --
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace $1.Models
+{
+    public class $2
+    {
+        $0
+    }
+}

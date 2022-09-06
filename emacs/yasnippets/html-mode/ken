@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: kendo
+# key: ken
+# --
+@(Html.Kendo().$1
+    .$0
+)

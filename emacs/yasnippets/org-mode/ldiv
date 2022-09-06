@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ldiv
+# key: ldiv
+# --
+\input{longdiv}\longdiv{$1}{$2}$0

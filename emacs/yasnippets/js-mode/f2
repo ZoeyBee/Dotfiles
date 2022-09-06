@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: function2
+# key: f2
+# --
+function $1(${2:arg} ${3:arg}){
+  var $2 = $2
+  var $3 = $3
+  $0
+}

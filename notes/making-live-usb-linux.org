@@ -1,0 +1,30 @@
+Creating a bootable Ubuntu USB flash drive from terminal
+
+Place the ubuntu.iso file in any hard disk partition.
+Then mount the ubuntu.iso file with the below commands in terminal:
+
+#+BEGIN_SRC bash
+sudo mkdir /media/iso/
+sudo mount -o loop /path/to/ubuntu.iso /media/iso
+#+END_SRC
+
+Insert your USB flash drive. My drive is /dev/sdd. Here's a screenshot:
+GParted screenshot
+
+Your drive may be automatically mounted inside /media/. Let's assume that it was mounted in /media/xxx/.
+Copy all files from /media/iso/ to your mounted USB flash drive by running the below command (make sure to include the dot):
+
+#+BEGIN_SRC bash
+cp -a /media/iso/. /media/xxx/
+#+END_SRC
+
+Next, you need the ldlinux.sys file in your USB flash drive to make the USB bootable. My USB partition is /dev/sdd1; enter lsblk to see what's yours. Run the below commands:
+
+#+BEGIN_SRC bash
+sudo apt-get install syslinux mtools
+sudo syslinux -s /dev/sdd1
+#+END_SRC
+
+Navigate to the /media/xxx mount folder and rename the isolinux directory to syslinux. Then go into the renamed folder and rename the file isolinux.cfg to syslinux.cfg.
+Reboot your PC and change the boot order in BIOS to allow booting from a USB drive. Now your Ubuntu USB flash drive will boot and you can install it.
+This method will work for any Linux distribution, not only Ubuntu. You don't need to install any third party software to make a Linux USB flash drive.

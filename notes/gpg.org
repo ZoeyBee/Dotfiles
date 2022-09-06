@@ -1,0 +1,2 @@
+gpg -r $1 -e file
+gpg -d file.gpg >> file

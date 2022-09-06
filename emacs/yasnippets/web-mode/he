@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: helper
+# key: he
+# --
+@using (Html.$1("$2", "$3", FormMethod.$4)){
+  $0
+}

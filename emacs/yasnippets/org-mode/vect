@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: vect
+# key: vect
+# --
+\left[\begin{aligned}$1\\\\$2\end{aligned}\right]$0

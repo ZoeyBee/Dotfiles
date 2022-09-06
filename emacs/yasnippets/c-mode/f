@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name:f
+# key:f
+# --
+${1:void} ${2:$$(s-replace " " "_" yas-text)} ($3)
+{
+  $0
+}

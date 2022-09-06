@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: method
+# key: mtd
+# --
+public ${1:TYPE} ${2:NAME}($3)
+  {
+    return $0;
+  }

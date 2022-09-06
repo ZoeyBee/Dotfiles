@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: class
+# key: cls
+# --
+class $1 extends Component {
+  render() {
+    return(
+      <div>
+        $0
+      </div>
+    );
+  }
+}

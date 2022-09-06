@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: t
+# key: t
+# --
+with tag('$1'$0):

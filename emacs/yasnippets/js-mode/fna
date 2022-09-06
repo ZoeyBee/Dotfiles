@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: fna
+# key: fna
+# --
+function $1(${2:enumerate}){
+  $2
+
+  $0
+}

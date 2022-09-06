@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: function
+# key: d
+# --
+${1:static void} ${3:$$(s-replace " " "_" yas-text)}(${4:int argc, char *argv[]})
+{
+    $0
+}

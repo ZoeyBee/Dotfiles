@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: v
+# key: v
+# expand-env: ((yas-indent-line nil))
+# --
+${1:$$(s-replace " " "_" yas-text)} = $0

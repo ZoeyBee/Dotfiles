@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: s
+# key: s
+# --
+<script type="text/javascript">
+ $0
+</script>

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: stateless function
+# key: slf
+# --
+function $1(props) {
+  return (
+    <div>
+      $0
+    </div>
+  );
+}

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: dm
+# key: dm
+# --
+${1:name} = models.${2:$$(my/capitalize-first-char yas-text)}Field($0)

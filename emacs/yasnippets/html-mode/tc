@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tc
+# key: tc
+# --
+<$1 class="$2"> $0 </$1>

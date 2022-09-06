@@ -1,0 +1,20 @@
+* MY DOTFILES
+
+    1. Arch
+    2. i3-gaps
+    3. Polybar
+
+    [[./screenshot.png]]
+
+* TODO
+  make a setup.py that calls bindsymlinks.py and installs
+  required software(find someway to not limit this to pacman)
+
+  turn the onedark-all-sites css into a python project that can:
+    take in a output path and a json file of colour values
+      {background: #010101, foreground: #101010}
+    produce a css file based on a json file with css targets
+    and attributes
+                       attribute      color variable
+                           ^                 ^
+      {#targetID: {'background-color': 'background'}}

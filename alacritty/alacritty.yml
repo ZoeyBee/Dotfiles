@@ -1,0 +1,51 @@
+window:
+    opacity: 0.7
+
+key_bindings:
+  - { key: Left,     mods: Alt,     chars: "\x1b[1;3D"               }
+  - { key: Right,    mods: Alt,     chars: "\x1b[1;3C"               }
+
+font:
+  normal:
+    family: Roboto Mono Medium
+    style: Regular
+  bold:
+    family: Roboto Mono
+    style: Bold
+  italic:
+    family: Roboto Mono Medium
+    style: Italic
+  bold_italic:
+    family: Roboto Mono
+    style: Bold Italic
+  size: 15
+
+# Colors (Material Theme)
+color-237: #ffffff
+colors:
+  # Default colors
+  primary:
+    background: '#272b33'
+    foreground: '#979da9'
+
+  # Normal colors
+  normal:
+    black:   '#444444'
+    red:     '#d75f87'
+    green:   '#e5c07b'
+    yellow:  '#87af87'
+    blue:    '#005f5f'
+    magenta: '#c678dd'
+    cyan:    '#61afef'
+    white:   '#eee8d5'
+
+  # Bright colors
+  bright:
+    black:   '#4e4e4e'
+    red:     '#ff5370'
+    green:   '#c3e88d'
+    yellow:  '#ffcb6b'
+    blue:    '#839496'
+    magenta: '#f07178'
+    cyan:    '#89ddff'
+    white:   '#ffffff'

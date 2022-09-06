@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: tags
+# key: tas
+# --
+<${1:enumerate} $2="$3">
+  $0
+</$1>

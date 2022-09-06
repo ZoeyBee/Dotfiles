@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: Document
+# key: doc
+# --
+<!DOCTYPE html>
+<html>
+  <head>
+    $1
+  </head>
+
+  <body>
+    $0
+  </body>
+</html>

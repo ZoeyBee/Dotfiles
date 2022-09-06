@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: matrix
+# key: matrix
+# --
+
+$$\left[\begin{aligned}
+$0
+\end{aligned}\right]$$

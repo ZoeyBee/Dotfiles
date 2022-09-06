@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: plt
+# key: plt
+# --
+$$\begin{tikzpicture}\begin{axis}[
+        axis x line=middle, axis y line=middle]
+    \addplot[domain=-10:10, orange, thick] {$1};
+\end{axis}\end{tikzpicture}$$
+$0

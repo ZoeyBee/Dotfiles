@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: cd
+# key: cd
+# --
+'''
+$0
+'''

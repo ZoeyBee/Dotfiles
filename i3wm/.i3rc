@@ -1,0 +1,250 @@
+set $mod Mod4
+
+font pango:roboto mono medium 12
+
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec alacritty
+
+# start Qutebrowser
+bindsym $mod+t exec qutebrowser
+
+# toggle layout
+bindsym $mod+Tab exec python3 ~/toggle-keymap.py
+
+# hide mouse
+bindsym $mod+Escape exec python3 ~/center_mouse.py
+
+# dropdown terminal
+bindsym $mod+n exec python3 ~/spawn-terminal.py
+
+# toggle sexy
+bindsym $mod+p exec python3 ~/makesexy.py
+
+# start Emacs
+bindsym $mod+z exec emacs
+
+# Change light level
+bindsym $mod+u exec xbacklight -dec 10
+bindsym $mod+y exec xbacklight -inc 10
+
+# Print screen
+bindsym --release $mod+x exec --no-startup-id import /tmp/latest-screenshot.png
+bindsym --release $mod+shift+x exec python3 ~/take_screenshot.py
+
+# start Ranger
+bindsym $mod+c exec python3 ~/startRanger.py
+
+# kill focused window
+bindsym $mod+q kill
+
+# Lock pc
+# bindsym $mod+b exec bash ~/lock.sh
+
+# Change volume
+bindsym $mod+i exec amixer -q sset Master 3%+
+bindsym $mod+o exec amixer -q sset Master 3%-
+bindsym $mod+m exec amixer -q sset Master toggle
+
+# start rofi
+bindsym $mod+d exec rofi -show run
+bindsym $mod+e exec rofi -show window
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# split in horizontal orientation
+bindsym $mod+g split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+# bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+shift+w layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+# bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+bindsym $mod+Shift+b exec killall -9 blender
+
+set $workspace1  ""
+set $workspace2  ""
+set $workspace3  ""
+set $workspace4  ""
+set $workspace5  ""
+set $workspace6  ""
+set $workspace7  ""
+set $workspace8  ""
+set $workspace9  ""
+set $workspace10 ""
+
+# switch to workspace
+bindsym $mod+a workspace prev
+bindsym $mod+s workspace next
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
+bindsym $mod+9 workspace $workspace9
+bindsym $mod+0 workspace $workspace10
+
+# move focused container to workspace
+bindsym $mod+Shift+a move container to workspace prev
+bindsym $mod+Shift+s move container to workspace next
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
+bindsym $mod+Shift+0 move container to workspace $workspace10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode ""
+
+# COLL
+# unused colours: #272b33 #282c34 #383c4a #f3f4f5 #878E7D #2f343f
+# bg color without transparency: #292d36
+# '(("atom-one-dark-accent"   . "#528BFF")
+#   ("atom-one-dark-fg"       . "#ABB2BF")
+#   ("atom-one-dark-bg"       . "#272b33")
+#   ("atom-one-dark-bg-1"     . "#121417")
+#   ("atom-one-dark-bg-hl"    . "#2F343D")
+#   ("atom-one-dark-gutter"   . "#666D7A")
+#   ("atom-one-dark-accent"   . "#AEB9F5")
+#   ("atom-one-dark-mono-1"   . "#ABB2BF")
+#   ("atom-one-dark-mono-2"   . "#828997")
+#   ("atom-one-dark-mono-3"   . "#5C6370")
+#   ("atom-one-dark-cyan"     . "#56B6C2")
+#   ("atom-one-dark-blue"     . "#61AFEF")
+#   ("atom-one-dark-purple"   . "#C678DD")
+#   ("atom-one-dark-green"    . "#98C379")
+#   ("atom-one-dark-red-1"    . "#E06C75")
+#   ("atom-one-dark-red-2"    . "#BE5046")
+#   ("atom-one-dark-orange-1" . "#D19A66")
+#   ("atom-one-dark-orange-2" . "#E5C07B")
+#   ("atom-one-dark-gray"     . "#3E4451")
+#   ("atom-one-dark-silver"   . "#AAAAAA")
+#   ("atom-one-dark-black"    . "#0F1011"))
+
+
+# set $accent               #87ac70
+set $accent               #896cad
+set $bg-colour            #00000000
+set $inactive-bg-colour   #00000000
+set $text-colour          #896cad
+set $inactive-text-colour #878E7D
+set $urgent-bg-colour     #00000000
+set $preview-colour       #2f343f
+
+client.focused          $bg-colour          $bg-colour          $text-colour             $preview-colour
+client.unfocused        $inactive-bg-colour $inactive-bg-colour $inactive-text-colour    $preview-colour
+client.focused_inactive $inactive-bg-colour $inactive-bg-colour $inactive-text-colour    $preview-colour
+client.urgent           $urgent-bg-colour   $bg-colour          $text-colour             $preview-colour
+
+for_window [class="tkinter"]             floating enable
+for_window [class="python3"]             floating enable
+for_window [class="godot3"]              floating enable
+for_window [class="python"]              floating enable
+for_window [class="evince"]              floating enable
+for_window [class="blender"]             floating enable
+for_window [class="Thunar"]              floating enable
+for_window [class="Thunar"]              resize set 1000 500
+for_window [class="godot"]               floating enable
+for_window [class="java"]                floating enable
+for_window [title="java"]                floating enable
+for_window [title="QTTestApp"]           floating enable
+for_window [title="main.py"]             floating enable
+for_window [title="matplotlib"]          floating enable
+for_window [title="Network Connections"] floating enable
+for_window [title="forcefloat"]          floating enable
+for_window [class="tor"]                 floating enable
+for_window [class="firefox.real"]        floating enable
+
+default_border pixel 0
+hide_edge_borders both
+bindsym --release button2 kill
+
+exec_always bash ~/run_polybar.sh
+exec_always picom -f -c -C -z -G -o 4 --inactive-dim 0.1 --config .config/compton.conf
+exec feh --bg-scale ~/bg/bg.png
+exec python3 ~/makesexy.py off
+exec python3 ~/new-starti3.py
+
+assign [class="Steam"]        → $workspace7
+assign [class="Lutris"]       → $workspace7
+assign [class="emacs"]        → $workspace3
+assign [class="Ardour"]       → $workspace10
+assign [class="Zrythm"]       → $workspace10
+assign [class="BitwigStudio"] → $workspace10
+assign [class="Rack"]         → $workspace10
+assign [class="cadence"]      → $workspace9
+assign [class="discord"]      → $workspace8
+
+gaps inner 15
+gaps outer 10
+
+border_radius 4

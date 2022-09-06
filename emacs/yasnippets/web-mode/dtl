@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: dtl
+# key: dtl
+# --
+{% extends parent_template|default:"$1" %}
+
+{% block content %}
+
+    <div>
+        $0
+    </div>
+
+{% endblock %}

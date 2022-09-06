@@ -1,0 +1,17 @@
+To backup your secret keys:
+
+gpg -a --export-secret-keys > secret.asc
+This will actually put all of your secret keys in a single file.
+
+For your public keys:
+
+gpg -a --export > public.asc
+You also need your trust database:
+
+gpg -a --export-ownertrust > trust.asc
+To restore your keys:
+
+gpg --import public.asc secret.asc
+
+gpg --import-ownertrust trust.asc
+

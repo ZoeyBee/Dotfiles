@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: test
+# key: test
+# --
+# name: QT UI class ... { ... }
+# key: uiclass
+# --
+#include <$3>
+namespace Ui {
+    class $1;
+}
+class ${1:Name} : public ${3:QWidget}
+{
+    Q_OBJECT
+public:
+    $1(${2:QWidget * parent = 0});
+    ~$1();
+private:
+    Ui::$1 * ui;
+};

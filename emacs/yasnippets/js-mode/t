@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: t
+# key: t
+# --
+<$1>
+$>$0
+</${1:$(nth 0 (split-string yas-text " "))}>
