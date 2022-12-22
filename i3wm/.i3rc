@@ -229,7 +229,7 @@ hide_edge_borders both
 bindsym --release button2 kill
 
 exec_always bash ~/run_polybar.sh
-exec_always picom -f -c -C -z -G -o 4 --inactive-dim 0.1 --config .config/compton.conf
+exec_always picom -f -c -C -z -G -o 4 --inactive-dim 0.1 -D 1 -O 1 --config .config/compton.conf
 exec feh --bg-scale ~/bg/bg.png
 exec python3 ~/makesexy.py off
 exec python3 ~/new-starti3.py

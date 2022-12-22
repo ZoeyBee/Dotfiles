@@ -1696,7 +1696,8 @@ body #conversation-list-rows .conversation{
 .playControls__inner, .playControls__bg,
 .trackItemWithEdit.active, .trackItemWithEdit.active .trackItemWithEdit__additional, .tabs__tabs, .g-modal-section, .addToPlaylistItem__actions, .g-dark, .sc-background-light, .readMoreBadge__countWrapper,
 .sc-border-light, .sc-border-light-right, .sc-border-light-bottom,
-.sc-classic .headerMenu.m-light{
+.sc-classic .headerMenu.m-light,
+.quotaMeterWrapper{
   background-color: #272b33 !important;
   color: #878E7D !important;
 }
@@ -2606,6 +2607,14 @@ body#dnbLayoutLarge, body#dnbLayoutExtraLarge{
   background-color: #272b33 !important;
 }
 .rfyhaz4c {
+  color: #878E7D !important;
+  background-color: #272b33 !important;
+}
+.ihGSwt {
+  color: #878E7D !important;
+  background-color: #272b33 !important;
+}
+.page-container{
   color: #878E7D !important;
   background-color: #272b33 !important;
 }

@@ -11,8 +11,9 @@ def settings(c, config):
     c.content.webgl = False
     c.content.webrtc_ip_handling_policy = 'disable-non-proxied-udp'
     c.content.proxy = 'system'
-    c.content.javascript.enabled = False
-    for url in javascript_whitelist: config.set('content.javascript.enabled', True, url)
+    c.content.javascript.enabled = True
+    # c.content.javascript.enabled = False
+    # for url in javascript_whitelist: config.set('content.javascript.enabled', True, url)
     c.content.headers.do_not_track = True
     c.content.headers.referer = 'same-domain'
     c.qt.chromium.process_model = 'process-per-site-instance'

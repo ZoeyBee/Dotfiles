@@ -79,7 +79,7 @@ def keys(c, config):
     config.bind('dnn', 'open -t https://www.nrk.no/')
     config.bind('dnb', 'open -t https://www.blikk.no/')
     config.bind('dnv', 'open -t https://www.vg.no/')
-    config.bind('dns', 'open -t https://toot.site/web/timelines/home')
+    config.bind('dns', 'open -t https://toot.site/home')
     config.bind('dnk', 'open -t https://klassekampen.no/')
     config.bind('dna', 'open -t https://brakmakern.com/')
     config.bind('dny', 'open -t https://www.yr.no/en/forecast/daily-table/1-46556/Norway/Viken/Moss/Moss')

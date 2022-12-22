@@ -1,0 +1,5 @@
+setup printer with gtk system-config-printer
+
+lp -n amount file
+
+lpoptions | tr " " '\n'

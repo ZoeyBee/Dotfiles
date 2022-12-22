@@ -15,8 +15,6 @@ alias nvim="nvim -u ~/.nvimrc"
 alias mpv="mpv --ao=jack"
 
 # setxkbmap -layout us
-alias keylayout="evince /run/media/martin/PornBank/ergodox/layout.pdf"
-
 alias s="sudo"
 alias p="sudo pacman"
 alias q="exit"
@@ -26,7 +24,7 @@ alias y="yt-dlp"
 alias e="emacsclient -cn"
 alias k="killall"
 
-alias update="sudo pacman -S archlinux-keyring && sudo pacman -Syu --noconfirm"
+alias update="sudo pacman -Sy archlinux-keyring --noconfirm && sudo pacman -Syu --noconfirm"
 alias pls="sudo"
 
 alias hdmiOn="xrandr --output HDMI-0 --mode 1920x1080 --right-of DVI-D-0 --rotate left"
@@ -39,3 +37,4 @@ alias cpass="pass -c websites/"
 # alias rm="pyrm.py"
 
 set -o vi
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
